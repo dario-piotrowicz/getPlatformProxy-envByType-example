@@ -21,7 +21,7 @@ console.log(`my KVs are: ${Object.keys(envByType.kv).join(', ')}`); // my KVs ar
 
 const myKv = envByType.kv.MY_KV_1;
 
-// @ts-expect-error (MY_KV is types with 'my-key' so we can't use 'key' here)
+// @ts-expect-error (MY_KV is typed with 'my-key' so we can't use 'key' here)
 // (note: this shows that the type of MY_KV_1 is taken from the user provided Env type)
 await myKv.put('key', 'my-value');
 
