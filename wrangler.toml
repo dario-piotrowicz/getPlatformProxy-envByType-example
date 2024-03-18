@@ -1,0 +1,34 @@
+kv_namespaces = [
+  { binding = "MY_KV_1", id = "xxx1" },
+  { binding = "MY_KV_2", id = "xxx2" },
+  { binding = "MY_KV_3", id = "xxx3" },
+]
+
+[vars]
+MY_VAR_A = 'my var A'
+MY_VAR_B = 'my var B'
+
+[[r2_buckets]]
+binding = "MY_R2"
+bucket_name = "my-bucket"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "test-db"
+database_id = "xxx"
+
+[[durable_objects.bindings]]
+name = "MY_DO"
+class_name = "MyDurableObject"
+script_name = "my_worker"
+
+[[services]]
+binding = "MY_SERVICE"
+service = "hello-worker"
+
+[ai]
+binding = "AI"
+
+[[queues.producers]]
+queue = "my-queue"
+binding = "MY_QUEUE"

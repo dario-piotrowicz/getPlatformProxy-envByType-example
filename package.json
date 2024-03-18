@@ -1,0 +1,18 @@
+{
+	"name": "getplatformproxy-envbytype-example-demo",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"start": "node --no-warnings --loader ts-node/esm index.ts"
+	},
+	"dependencies": {
+		"ts-node": "^10.9.1",
+		"typescript": "^5.1.6"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240129.0",
+		"@tsconfig/strictest": "^2.0.0",
+		"@types/node": "^20.4.2",
+		"wrangler": "https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/runs/8324801650/npm-package-wrangler-5274"
+	}
+}
